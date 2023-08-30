@@ -6,6 +6,7 @@ import {
   faBorderAll,
   faUser,
   faEye,
+  faTasks
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faMessage,
@@ -28,27 +29,35 @@ export const Sidebar = (props) => {
           </Link>
         </li>
         <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/user-management') ? 'active' : ''}`} to="/user-management">
+          <Link className={`sideLink ${location.pathname.includes('/roles-management') ? 'active' : ''}`} to="/roles-management">
             <span className="sideIcon">
               <FontAwesomeIcon icon={faUser} />
+            </span>
+            <span className="sideLinkText">Roles Management</span>
+          </Link>
+        </li>
+        <li className="sidebar-li">
+          <Link className={`sideLink ${location.pathname.includes('/department-management') ? 'active' : ''}`} to="/department-management">
+            <span className="sideIcon">
+              <FontAwesomeIcon icon={faEye} />
+            </span>
+            <span className="sideLinkText">Department Management</span>
+          </Link>
+        </li>
+        <li className="sidebar-li">
+          <Link className={`sideLink ${location.pathname.includes('/user-management') ? 'active' : ''}`} to="/user-management">
+            <span className="sideIcon">
+              <FontAwesomeIcon icon={faMessage} />
             </span>
             <span className="sideLinkText">User Management</span>
           </Link>
         </li>
         <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/watcher-management') ? 'active' : ''}`} to="/watcher-management">
+          <Link className={`sideLink ${location.pathname.includes('/task-view') ? 'active' : ''}`} to="/task-view">
             <span className="sideIcon">
-              <FontAwesomeIcon icon={faEye} />
+              <FontAwesomeIcon icon={faTasks} />
             </span>
-            <span className="sideLinkText">Watcher Management</span>
-          </Link>
-        </li>
-        <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/feedbacks') ? 'active' : ''}`} to="/feedbacks">
-            <span className="sideIcon">
-              <FontAwesomeIcon icon={faMessage} />
-            </span>
-            <span className="sideLinkText">User Feedbacks</span>
+            <span className="sideLinkText">Task View</span>
           </Link>
         </li>
       </ul>

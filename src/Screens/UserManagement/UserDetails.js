@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import { userData, paymentLog } from "./../../Config/Data";
+import { userData, paymentLog } from "../../Config/Data";
 
 import { DashboardLayout } from "../../Components/Layout/DashboardLayout";
 import BackButton from "../../Components/BackButton";
 import CustomModal from "../../Components/CustomModal";
 import UseTableControls from "../../Config/UseTableControls";
 
-const UserDetails = () => {
+const UserManagementDetail = () => {
 
   const { id } = useParams();
 
@@ -27,11 +27,11 @@ const UserDetails = () => {
   const [showModal3, setShowModal3] = useState(false);
   const [showModal4, setShowModal4] = useState(false);
 
-  const inactiveMale = () => {
+  const inActive = () => {
     setShowModal(false)
     setShowModal2(true)
   }
-  const activeMale = () => {
+  const Active = () => {
     setShowModal3(false)
     setShowModal4(true)
   }
@@ -45,7 +45,7 @@ const UserDetails = () => {
   }, []);
 
   useEffect(() => {
-    document.title = 'Rod Fin | Details';
+    document.title = 'Project Camp | User Details';
 
     paymentLog.filter(((item) => {
       if (profileData) {
@@ -86,7 +86,7 @@ const UserDetails = () => {
                 </div>
               </div>
               <div className="row">
-              <div className="col-lg-8">
+                <div className="col-lg-8">
                   <div className="row">
                     <div className="col-xl-6 col-md-6 mb-3">
                       <h4 className="secondaryLabel">Name</h4>
@@ -130,14 +130,14 @@ const UserDetails = () => {
           </div>
         </div>
 
-        <CustomModal show={showModal} close={() => { setShowModal(false) }} action={inactiveMale} heading='Are you sure you want to mark this user as inactive?' />
+        <CustomModal show={showModal} close={() => { setShowModal(false) }} action={inActive} heading='Are you sure you want to mark this user as inactive?' />
         <CustomModal show={showModal2} close={() => { setShowModal2(false) }} success heading='Marked as Inactive' />
 
-        <CustomModal show={showModal3} close={() => { setShowModal3(false) }} action={activeMale} heading='Are you sure you want to mark this user as Active?' />
+        <CustomModal show={showModal3} close={() => { setShowModal3(false) }} action={Active} heading='Are you sure you want to mark this user as Active?' />
         <CustomModal show={showModal4} close={() => { setShowModal4(false) }} success heading='Marked as Active' />
       </DashboardLayout>
     </>
   );
 };
 
-export default UserDetails;
+export default UserManagementDetail;

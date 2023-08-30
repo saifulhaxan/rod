@@ -5,10 +5,15 @@ import ForgetPassword from "../Screens/Auth/ForgetPassword";
 import ForgetPassword2 from "../Screens/Auth/ForgetPassword2";
 import ForgetPassword3 from "../Screens/Auth/ForgetPassword3";
 import { Dashboard } from "../Screens/Dashboard";
+import { RolesManagement } from "../Screens/RolesManagement";
+import UserDetails from "../Screens/RolesManagement/UserDetails";
+import { TaskView } from "../Screens/ProjectView";
+import TaskDetails from "../Screens/ProjectView/TaskDetails";
+
+import { DepartmentManagement } from "../Screens/DepartmentManagement";
+import DepartDetails from "../Screens/DepartmentManagement/DepartDetails";
 import { UserManagement } from "../Screens/UserManagement";
-import UserDetails from "../Screens/UserManagement/UserDetails";
-import { WatcherManagement } from "../Screens/WatcherManagement";
-import WatcherDetails from "../Screens/WatcherManagement/WatcherDetails";
+import UserManagementDetail from "../Screens/RolesManagement/UserDetails";
 import { Feedbacks } from "../Screens/Feedbacks";
 import FeedbackDetails from "../Screens/Feedbacks/FeedbackDetails";
 import Profile from "../Screens/Profile";
@@ -20,7 +25,7 @@ import Error from "../Screens/Error";
 
 export default function AdminRouter() {
   return (
-    <BrowserRouter basename="/rod-fin">
+    <BrowserRouter basename="/projectCamp">
       <Routes>
         <Route path="/" element={<AdminLogin />} />
         <Route path="/login" element={<AdminLogin />} />
@@ -31,10 +36,16 @@ export default function AdminRouter() {
         <Route path="/dashboard" element={<Dashboard />} />
 
         <Route path="/user-management" element={<UserManagement />} />
-        <Route path="/user-management/user-details/:id" element={<UserDetails />} />
+        <Route path="/user-management/user-details/:id" element={<UserManagementDetail />} />
 
-        <Route path="/watcher-management" element={<WatcherManagement />} />
-        <Route path="/watcher-management/watcher-details/:id" element={<WatcherDetails />} />
+        <Route path="/task-view" element={<TaskView />} />
+        <Route path="/task-view/task-details/:id" element={<TaskDetails />} />
+
+        <Route path="/roles-management" element={<RolesManagement />} />
+        <Route path="/roles-management/user-details/:id" element={<UserDetails />} />
+
+        <Route path="/department-management" element={<DepartmentManagement />} />
+        <Route path="/department-management/depart-details/:id" element={<DepartDetails />} />
 
         <Route path="/feedbacks" element={<Feedbacks />} />
         <Route path="/feedbacks/feedback-details/:id" element={<FeedbackDetails />} />

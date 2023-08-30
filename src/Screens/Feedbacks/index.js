@@ -58,7 +58,7 @@ export const Feedbacks = () => {
 
 
   useEffect(() => {
-    document.title = 'Rod Fin | Feedback';
+    document.title = 'Project Camp | Feedback';
 
     setData(userData);
   }, []);

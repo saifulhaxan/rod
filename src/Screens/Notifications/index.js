@@ -14,7 +14,7 @@ const Notifications = () => {
 
   useEffect(() => {
 
-    document.title = 'Rod Fin | Notifications';
+    document.title = 'Project Camp | Notifications';
 
     setNotificationState(notifications)
   }, [])

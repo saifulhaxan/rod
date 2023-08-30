@@ -1,17 +1,18 @@
 .authBg {
-    background: url('./../../../Assets/images/authBg.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #00293b;
 }
 
 
 .text-theme-primary {
     color: #d71201;
 }
+
 
 
 .authBox {
@@ -61,4 +62,8 @@
     font-size: 16px;
     font-weight: 600;
     color: #666;
+}
+
+.authForm h1 {
+    font-size: 3rem !important;
 }

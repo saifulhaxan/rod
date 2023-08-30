@@ -62,14 +62,13 @@
 }
 
 .paginationBar ul li button {
-    background-color: #d71201;
+    background-color: var(--primaryColor);
     color: #fff;
     padding: 7px 16px;
-    border: 1px solid #ff7064;
+    border: 1px solid var(--whiteColor);
     font-size: 18px;
 }
 
 .paginationBar ul li button:hover {
-    background-color: #fff;
-    color: #d71201;
+    background-color: var(--grayColor);
 }

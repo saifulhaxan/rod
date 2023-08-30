@@ -16,7 +16,7 @@ const Profile = () => {
     const [userData, setUserData] = useState({});
 
     useEffect(() => {
-        document.title = 'Rod Fin | My Profile';
+        document.title = 'Project Camp | My Profile';
 
         setUserData(currentUser);
     }, []);

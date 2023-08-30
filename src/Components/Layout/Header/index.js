@@ -49,8 +49,8 @@ export const Header = (props) => {
     <header>
       <Navbar className="customHeader" expand="md">
         <Container fluid>
-          <Link to={"/dashboard"} className="siteLogo order-2 order-lg-1">
-            <img src={logo} alt="Logo" />
+          <Link to={"/dashboard"} className="siteLogo order-2 order-lg-3 text-decoration-none">
+            <h1>Project <span>Camp</span></h1>
           </Link>
           <Navbar.Toggle className="order-4 order-lg-2 notButton">
             <FontAwesomeIcon className="bell-icon" icon={faEllipsisV} />

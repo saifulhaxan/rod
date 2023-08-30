@@ -13,11 +13,11 @@ export const AuthLayout = (props) => {
             <section className="authBg">
                 <div className='container'>
                     <div className="row g-0 authBox">
-                    <div className="col-lg-6">
+                        <div className="col-lg-6">
                             <div className="authFormWrapper">
                                 <div className="authForm">
-                                    <div className="authLogo">
-                                        <img src={logo} alt="authLogo" />
+                                    <div className="w-100 siteLogo text-center">
+                                        <h1>Project <span>Camp</span></h1>
                                     </div>
                                     <div className="authFormHeader">
                                         <h2 className="authTitle text-black">{props?.authTitle}</h2>

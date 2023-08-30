@@ -13,7 +13,7 @@ export const Dashboard = () => {
 
   useEffect(() => {
 
-    document.title = 'Rod Fin | Dashboard';
+    document.title = 'Project Camp | Dashboard';
 
     setStatistics(stats)
   }, []);
@@ -39,7 +39,7 @@ export const Dashboard = () => {
             <div className="col-12">
               <div className="dashCard">
                 <div className="d-flex flex-wrap justify-content-between">
-                <h3 className="mainTitle">User and Watcher</h3>
+                <h3 className="mainTitle">Task Status</h3>
                 <SelectBox selectClass="mainInput" name="Monthly" required option={'optionData'}
                   
                 />
@@ -61,23 +61,23 @@ export const Dashboard = () => {
                       tension: "0.5",
                       datasets: [
                         {
-                          label: "My First dataset",
+                          label: "Current Task",
 
-                          backgroundColor: "rgba(0, 41, 58, 29%)",
-                          borderColor: "#000000",
-                          pointBackgroundColor: "#000000",
-                          pointBorderColor: "#000000",
+                          backgroundColor: "rgb(0 41 59 / 81%)",
+                          borderColor: "#00293B",
+                          pointBackgroundColor: "#00293B",
+                          pointBorderColor: "#00293B",
                           borderWidth: 1,
                           data: [35, 30, 35, 30, 35],
                           tension: 0.5,
                         },
                         {
-                          label: "My Second dataset",
-                          backgroundColor: "rgba(247, 21, 0, 29%)",
-                          borderColor: "#F71500",
-                          pointBackgroundColor: "#F71500",
+                          label: "Pending Task",
+                          backgroundColor: "rgb(1 22 215 / 81%)",
+                          borderColor: "#0116d7",
+                          pointBackgroundColor: "#0116d7",
                           borderWidth: 1,
-                          pointBorderColor: "#F71500",
+                          pointBorderColor: "#0116d7",
                           data: [30, 35, 30, 35, 30],
                           tension: 0.5,
                         },

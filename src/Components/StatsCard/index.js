@@ -13,9 +13,9 @@ const StatsCard = (props) => {
     <>
       <div className="statsCard">
         <div className="statsContent">
-          <div className="statsImg">
+          {/* <div className="statsImg">
             <img src={props.item.image} alt="Card Icon" />
-          </div>
+          </div> */}
           <div className="statsData">
             <h3 className="statsNumber">{props.item.number}</h3>
             <p className="statsText">{props.item.text}</p>

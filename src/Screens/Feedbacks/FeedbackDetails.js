@@ -15,7 +15,7 @@ const FeedbackDetails = () => {
   const [feedbackData, setFeedbackData] = useState({});
 
   useEffect(() => {
-    document.title = 'Rod Fin | Feedback Details';
+    document.title = 'Project Camp | Feedback Details';
 
     feedbacks.forEach((item) => {
       if (item.id == id) {

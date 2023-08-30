@@ -16,7 +16,7 @@ const ForgetPassword3 = () => {
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
-        document.title = 'Rod Fin | Password Recovery';
+        document.title = 'Project Camp | Password Recovery';
     }, [])
 
 

@@ -15,7 +15,7 @@ const ForgetPassword = () => {
     const [formData, setFormData] = useState({})
 
     useEffect(() => {
-        document.title = 'Rod Fin | Password Recovery';
+        document.title = 'Project Camp | Password Recovery';
     }, [])
 
     const handleClick = (e) => {

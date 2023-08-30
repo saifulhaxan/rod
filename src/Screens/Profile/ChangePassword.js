@@ -25,7 +25,7 @@ const ChangePassword = () => {
 
     useEffect(() => {
 
-        document.title = 'Rod Fin | Change Password';
+        document.title = 'Project Camp | Change Password';
 
         setUserData(currentUser);
     }, []);

@@ -3,19 +3,6 @@
     border-right: 2px solid #fff0;
 }
 
-.addUser {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.addUser .inputWrapper {
-    flex-grow: 1;
-    margin-bottom: 0;
-}
-
-
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
     .stats, .stats:not(:last-child) {

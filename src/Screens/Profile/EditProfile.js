@@ -36,7 +36,7 @@ const EditProfile = () => {
 
     useEffect(() => {
 
-        document.title = 'Rod Fin | Edit Profile';
+        document.title = 'Project Camp | Edit Profile';
         setOptionData(country);
         setUserData(currentUser);
     },);

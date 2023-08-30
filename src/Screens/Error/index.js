@@ -6,7 +6,7 @@ import "./style.css";
 const Error = () => {
 
     useEffect(() => {
-        document.title = 'Rod Fin | Error 404';
+        document.title = 'Project Camp | Error 404';
     }, [])
 
     return (

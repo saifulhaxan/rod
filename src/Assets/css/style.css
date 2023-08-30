@@ -3,11 +3,12 @@
 /*----- General Css Start -----*/
 
 :root {
-    --primaryColor: #D71201;
-    --grayColor: #666666;
+    --primaryColor: #0116d7;
+    --grayColor: #00293B;
     --redColor : #ff0000;
     --greenColor: #42C900;
     --yellowColor: #E5BB45;
+    --whiteColor: #fff;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 }
 
 .redColor {
-    color: var(--redColor) !important;
+    color: var(--grayColor) !important;
 }
 
 .yellowColor {
